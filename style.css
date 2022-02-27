@@ -1,0 +1,90 @@
+This is css file
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-image: url(temp.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+ #tempcal{
+    position: absolute;
+    top: 30%;
+    justify-content: center;
+    text-align: center;
+    left: 27%;
+    width: 45%;
+    height: 40%;
+    border: solid transparent;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+#tempcal input{
+    border: solid black;
+    font-size: 25px;
+    border-radius: 10px;
+    margin: 25px;
+    padding: 5px;
+}
+#tempcal select{
+    border: solid black;
+    font-size: 25px;
+    border-radius: 10px;
+}
+#tempcal  #btn{
+    font-size: 25px;
+    padding: 9px;
+    color: white;
+    background-color: black;
+    border-radius: 16px;
+    width: 140px;
+}
+ #temp_opt{
+    padding: 5px;
+}
+#resultcont{
+    font-size: 25px;
+    color: red;
+}
+
+@media (max-width:825px){
+    #tempcal input{
+        font-size: 20px; 
+        width: 70%; 
+    }
+    #tempcal{
+        justify-content: center;
+        width: 60%;
+        top: 20%;
+        left: 20%;
+        height: 60%;
+    }
+    #tempcal  #btn{
+        cursor: pointer;
+        font-size: 20px;
+        padding: 7px;
+        width: 100px;
+    }
+    #tempcal select{
+        border: solid black;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+}
+@media (max-width:600px){
+    #tempcal{
+        width: 60%;
+        height: 60%;
+    }
+}
+@media (max-width:900px){
+    #tempcal{
+        height: 70%;
+    }
+}
